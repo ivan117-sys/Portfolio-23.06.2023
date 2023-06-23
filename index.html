@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Open+Sans:ital,wght@0,500;0,600;0,700;1,400&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="queries.css" />
+    <script defer src="script.js"></script>
+
+    <title>Portfolio website</title>
+  </head>
+
+  <body>
+    <header class="header sticky">
+      <div>
+        <p class="brand">Ivan Mušković</p>
+      </div>
+      <nav class="navigation">
+        <ul class="nav-list">
+          <div class="mobile-socials">
+            <li>
+              <a href="https://www.facebook.com/ivan.muskovic/">
+                <ion-icon name="logo-facebook" class="social__icon"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.instagram.com/coding.map/">
+                <ion-icon name="logo-instagram" class="social__icon"></ion-icon>
+              </a>
+            </li>
+            <li>
+              <a href="mailto: ivanmuskovic@gmail.com">
+                <ion-icon name="mail-outline" class="social__icon"></ion-icon>
+              </a>
+            </li>
+          </div>
+          <li class="mobile-socials-phone">
+            <a href="tel:091-578-7970">
+              <ion-icon name="call-outline" class="social__icon"></ion-icon>
+            </a>
+          </li>
+          <li class="nav__links-main">
+            <a class="nav-item" href="#services">Services</a>
+          </li>
+          <li class="nav__links-main">
+            <a class="nav-item" href="#projects">Projects</a>
+          </li>
+
+          <li class="nav__links-main">
+            <a class="nav-item" href="#skills">Skills</a>
+          </li>
+          <li class="nav__links-main">
+            <a class="btn btn--projects nav-button" href="#info">Hire me</a>
+          </li>
+        </ul>
+      </nav>
+      <button class="btn-mobile-nav">
+        <ion-icon class="icon-mobile-nav" name="menu-outline"></ion-icon>
+        <ion-icon class="icon-mobile-nav" name="close-outline"></ion-icon>
+      </button>
+    </header>
+    <main>
+      <section class="home">
+        <div class="bg-video">
+          <video
+            src="iStock-1191850673.mov"
+            class="bg-video__content"
+            autoplay
+            muted
+            loop
+          ></video>
+        </div>
+        <div class="container">
+          <div class="about">
+            <span class="name">Hi, my name is</span>
+            <h1 class="header__name">Ivan</h1>
+            <p class="about__me">
+              Web dev, with
+              <span class="degree">degree in Front-end development.</span>
+              Let me help you create your own dream project. Its time to get
+              your business to the next level, improve your<span class="degree">
+                company sales and branding with me.
+              </span>
+            </p>
+            <a href="#info" class="btn btn--projects absolute">Get in touch</a>
+          </div>
+          <div class="photo__container">
+            <img
+              class="photo heartbeat"
+              src="photos/photo_of_me.jpg"
+              alt="photo of me"
+            />
+          </div>
+        </div>
+      </section>
+      <section id="services" class="section__how section">
+        <div class="heading__how-container">
+          <span class="subheading__skills"> How</span>
+          <h2 class="heading__skills">Can I help you?</h2>
+        </div>
+        <div class="hows__container">
+          <div class="how__container">
+            <div class="icon__container">
+              <ion-icon
+                name="hardware-chip-outline"
+                class="how__icon"
+              ></ion-icon>
+            </div>
+            <div class="text__container">
+              <h2 class="how__title">Web app development</h2>
+              <p class="how__text">
+                I prioritize user experience, creating intuitive and engaging
+                interfaces that ensure your web app is easy to navigate and a
+                pleasure to use. Maximize user satisfaction and drive engagement
+                with design expertise.
+              </p>
+            </div>
+          </div>
+          <div class="how__container">
+            <div class="icon__container">
+              <ion-icon name="desktop-outline" class="how__icon"></ion-icon>
+            </div>
+            <div class="text__container">
+              <h2 class="how__title">Website development & design</h2>
+              <p class="how__text">
+                Looking for a unique and tailored online presence? I will build
+                a custom website that perfectly represents your brand and meets
+                your specific business needs.
+              </p>
+            </div>
+          </div>
+          <div class="how__container">
+            <div class="icon__container">
+              <ion-icon name="shapes-outline" class="how__icon"></ion-icon>
+            </div>
+            <div class="text__container">
+              <h2 class="how__title">Graphic design</h2>
+              <p class="how__text">
+                Transform your ideas into visually captivating designs with
+                creative graphics. I offer services such as creating flyers and
+                infographics.
+              </p>
+            </div>
+          </div>
+          <div class="how__container">
+            <div class="icon__container">
+              <ion-icon name="logo-facebook" class="how__icon"></ion-icon>
+            </div>
+            <div class="text__container">
+              <h2 class="how__title">Social media marketing</h2>
+              <p class="how__text">
+                Strategic Social Media Marketing: I help businesses leverage
+                popular platforms to build brand awareness, engage with their
+                audience, and drive meaningful results.
+              </p>
+            </div>
+          </div>
+          <div class="how__container">
+            <div class="icon__container">
+              <ion-icon name="megaphone-outline" class="how__icon"></ion-icon>
+            </div>
+            <div class="text__container">
+              <h2 class="how__title">Ads management</h2>
+              <p class="how__text">
+                Targeted Ad Campaigns: Reach your ideal audience with
+                precision-targeted ad campaigns.
+              </p>
+            </div>
+          </div>
+
+          <div class="how__container">
+            <div class="icon__container">
+              <ion-icon name="reader-outline" class="how__icon"></ion-icon>
+            </div>
+            <div class="text__container">
+              <h2 class="how__title">Content writting</h2>
+              <p class="how__text">
+                SEO-Optimized Copywriting: Get noticed by search engines and
+                rank higher in search results with SEO-optimized copywriting
+                services.
+              </p>
+            </div>
+          </div>
+          <div class="how__container">
+            <div class="icon__container">
+              <ion-icon name="mail-outline" class="how__icon"></ion-icon>
+            </div>
+            <div class="text__container">
+              <h2 class="how__title">E-mail marketing</h2>
+              <p class="how__text">
+                Boost your business with e-mail marketing services. Engage,
+                convert, and build customer relationships through compelling
+                campaigns tailored to your needs.
+              </p>
+            </div>
+          </div>
+          <div class="how__container">
+            <div class="icon__container">
+              <ion-icon name="ribbon-outline" class="how__icon"></ion-icon>
+            </div>
+            <div class="text__container">
+              <h2 class="how__title">SEO</h2>
+              <p class="how__text">
+                I will optimize your website, research strategic keywords, and
+                employ effective tactics to boost your search rankings. Dominate
+                the competition and attract organic traffic with expert SEO
+                solutions.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="projects section" id="projects">
+        <div class="container__heading">
+          <h2 class="heading__skills">Projects</h2>
+        </div>
+        <div class="projects__container">
+          <div class="project__financeapp">
+            <span class="number__span span__finance">01</span>
+
+            <img
+              class="project finance__img"
+              src="photos/Project thumbnails/Finance app3.png"
+              alt="image of chess app"
+            />
+            <div class="project__container">
+              <div class="site">
+                <ul class="site__list">
+                  <li>
+                    <p class="project__description text">
+                      MERN app for personal finance, with crypto API
+                    </p>
+                  </li>
+                  <li class="list__item">
+                    <a
+                      href="https://financebuddy117.netlify.app/"
+                      class="link__site"
+                      >App</a
+                    >
+                  </li>
+
+                  <li class="list__item">
+                    <a
+                      href="https://github.com/ivan117-sys/Finance-app-frontend"
+                      class="link__site"
+                      >GitHub</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="project__chat-app">
+            <span class="number__span span__chat">02</span>
+
+            <img
+              class="project"
+              src="photos/Project thumbnails/Chatty.png"
+              alt="image of chess app"
+            />
+            <div class="project__container">
+              <div class="site">
+                <ul class="site__list">
+                  <li>
+                    <p class="project__description text">
+                      Online Chat app, created with web socket, in React and
+                      Scaledrone
+                    </p>
+                  </li>
+                  <li class="list__item">
+                    <a href="https://chatty117.netlify.app/" class="link__site"
+                      >Chatty app</a
+                    >
+                  </li>
+
+                  <li class="list__item">
+                    <a
+                      href="https://github.com/ivan117-sys/Chatty-App"
+                      class="link__site"
+                      >GitHub</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="project__chessapp">
+            <span class="number__span span__02">03</span>
+
+            <img
+              class="project"
+              src="photos/Project thumbnails/Piantina3.png"
+              alt="image of chess app"
+            />
+            <div class="project__container">
+              <div class="site">
+                <ul class="site__list">
+                  <li>
+                    <p class="project__description text">
+                      Website for restaurant Piantina
+                    </p>
+                  </li>
+                  <li class="list__item">
+                    <a href="https://piantina.netlify.app/" class="link__site"
+                      >Piantina
+                    </a>
+                  </li>
+
+                  <li class="list__item">
+                    <a
+                      href="https://github.com/ivan117-sys/Chess-app"
+                      class="link__site"
+                      >GitHub</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__holiday">
+            <span class="number__span span__01">04</span>
+            <img
+              class="project"
+              src="photos/Project thumbnails/Pool Main.JPG"
+              alt="image of holiday home"
+            />
+
+            <div class="project__container">
+              <div class="site">
+                <ul class="site__list">
+                  <li>
+                    <p class="project__description text">
+                      Website for renting property
+                    </p>
+                  </li>
+                  <li class="list__item">
+                    <a
+                      href="https://holiday-home-ivan.netlify.app"
+                      class="link__site"
+                      >Website</a
+                    >
+                  </li>
+
+                  <li class="list__item">
+                    <a
+                      href="https://github.com/ivan117-sys/Holiday-home"
+                      class="link__site"
+                      >GitHub</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__movie">
+            <span class="number__span span__03">05</span>
+            <img
+              class="project__small"
+              src="photos/Project thumbnails/Snimka zaslona (434).png"
+              alt="image of movie database"
+            />
+            <div class="project__container">
+              <div class="site">
+                <ul class="site__list">
+                  <li>
+                    <p class="project__description text">
+                      App made for browsing current movies by rating
+                    </p>
+                  </li>
+                  <li class="list__item">
+                    <a
+                      href="https://movie-room17.netlify.app/"
+                      class="link__site"
+                      >Movies app</a
+                    >
+                  </li>
+
+                  <li class="list__item">
+                    <a
+                      href="https://github.com/ivan117-sys/Movie-site"
+                      class="link__site"
+                      >Github</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          <div class="project__iorder">
+            <span class="number__span span__04">06</span>
+            <img
+              class="project__small"
+              src="photos/Project thumbnails/Snimka zaslona (432).png"
+              alt="image of iorder app"
+            />
+            <div class="project__container">
+              <div class="site">
+                <ul class="site__list">
+                  <li>
+                    <p class="project__description text">
+                      Demo app / ordering system in restourants
+                    </p>
+                  </li>
+                  <li class="list__item">
+                    <a href="https://iorderapp.netlify.app/" class="link__site"
+                      >iOrder app</a
+                    >
+                  </li>
+
+                  <li class="list__item">
+                    <a
+                      href="https://github.com/ivan117-sys/iorder-app"
+                      class="link__site"
+                      >GitHub</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="skills section" id="skills">
+        <div class="container__skills">
+          <div class="container__heading__skills">
+            <h2 class="heading__skills">Skills</h2>
+          </div>
+
+          <div class="card__container">
+            <div class="card__row">
+              <div class="card">
+                <div class="container__skill front__side">
+                  <p class="skill">Javascript</p>
+                </div>
+                <div class="container__skill back__side">
+                  <img
+                    class="photo__cards"
+                    src="photos/JS_2.png"
+                    alt="photo of js"
+                  />
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="container__skill front__side">
+                  <p class="skill">HTML</p>
+                </div>
+                <div class="container__skill back__side">
+                  <img
+                    class="photo__cards"
+                    src="photos/HTML_2.png"
+                    alt="photo of js"
+                  />
+                </div>
+              </div>
+              <div class="card">
+                <div class="container__skill front__side">
+                  <p class="skill">CSS</p>
+                </div>
+                <div class="container__skill back__side">
+                  <img
+                    class="photo__cards"
+                    src="photos/css.png"
+                    alt="photo of js"
+                  />
+                </div>
+              </div>
+              <div class="card">
+                <div class="container__skill front__side">
+                  <p class="skill">React</p>
+                </div>
+                <div class="container__skill back__side">
+                  <img
+                    class="photo__cards"
+                    src="photos/react.png"
+                    alt="photo of js"
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="card__row">
+              <div class="card">
+                <div class="container__skill front__side">
+                  <p class="skill">Mongo DB</p>
+                </div>
+                <div class="container__skill back__side">
+                  <img
+                    class="photo__cards"
+                    src="photos/kisspng-mongodb-nosql-database-computer-icons-5b07afd24ea653.7191630815272304183222.png"
+                    alt="photo of js"
+                  />
+                </div>
+              </div>
+              <div class="card">
+                <div class="container__skill front__side">
+                  <p class="skill">Java</p>
+                </div>
+                <div class="container__skill back__side">
+                  <img
+                    class="photo__cards"
+                    src="photos/kisspng-java-programming-language-computer-programming-obj-java-5aecd0e59d9dc8.3852910215254694136456.png"
+                    alt="photo of js"
+                  />
+                </div>
+              </div>
+              <div class="card">
+                <div class="container__skill front__side">
+                  <p class="skill">SASS</p>
+                </div>
+                <div class="container__skill back__side">
+                  <img
+                    class="photo__cards"
+                    src="photos/icons8-sass-647.png"
+                    alt="photo of js"
+                  />
+                </div>
+              </div>
+              <div class="card">
+                <div class="container__skill front__side">
+                  <p class="skill">Node.js</p>
+                </div>
+                <div class="container__skill back__side">
+                  <img
+                    class="photo__cards"
+                    src="photos/kisspng-node-js-javascript-web-application-express-js-comp-5ae0f84e5e7537.0464945815246930703869.png"
+                    alt="photo of js"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section__info section" id="info">
+        <div class="container__heading">
+          <span class="subheading__skills"> get in touch</span>
+          <h2 class="heading__skills">Hire me</h2>
+        </div>
+        <div class="info__container">
+          <div class="socials__container">
+            <a href="https://www.facebook.com/ivan.muskovic/">
+              <ion-icon name="logo-facebook" class="social__icon"></ion-icon>
+            </a>
+            <a href="https://www.instagram.com/coding.map/">
+              <ion-icon name="logo-instagram" class="social__icon"></ion-icon>
+            </a>
+            <a href="mailto: ivanmuskovic@gmail.com">
+              <ion-icon name="mail-outline" class="social__icon"></ion-icon>
+            </a>
+            <a
+              href="https://www.linkedin.com/in/ivan-mu%C5%A1kovi%C4%87-developer/"
+            >
+              <ion-icon name="logo-linkedin" class="social__icon"></ion-icon>
+            </a>
+            <a href="tel:091-578-7970">
+              <ion-icon name="call-outline" class="social__icon"></ion-icon>
+            </a>
+          </div>
+
+          <div class="contact__container">
+            <div class="input__container">
+              <div class="city">
+                <p class="paragraph__text">City:</p>
+              </div>
+              <div class="city__input">
+                <p class="paragraph__text">52212 Fažana, Croatia</p>
+              </div>
+            </div>
+            <div class="input__container">
+              <div class="email">
+                <p class="paragraph__text">Email:</p>
+              </div>
+              <div class="email__input">
+                <p class="paragraph__text">ivanmuskovic@gmail.com</p>
+              </div>
+            </div>
+            <div class="input__container">
+              <div class="Phone">
+                <p class="paragraph__text">Phone:</p>
+              </div>
+              <div class="email__input">
+                <p class="paragraph__text">+ 385 98 92 94 639</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="section">
+      <p>Copyright &copy; 2023 by Ivan Mušković. All rights reserved</p>
+    </footer>
+  </body>
+
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+  ></script>
+</html>

@@ -1,0 +1,222 @@
+:root {
+  --color-blue-light: #66fcf1;
+  --color-blue-light-shaded: #45a29e;
+  --color-grey-dark-text: #c5c6c7;
+  --color-grey-light-text: #faf9f9;
+  --color-blue-dark: #0b0c10;
+  --color-blue-dark-shade: #1f2833;
+}
+
+@media (max-width: 103.75em) {
+  .projects {
+    height: 410rem;
+  }
+
+  .projects__container {
+    margin-top: 20rem;
+    min-width: 100vw;
+  }
+
+  .project__financeapp {
+    justify-self: center;
+    position: relative;
+    right: 15rem;
+    margin-bottom: 10rem;
+  }
+
+  .project__chat-app {
+    justify-self: center;
+
+    position: relative;
+    right: 15rem;
+  }
+
+  .project__chessapp {
+    justify-self: center;
+    position: relative;
+    left: 12rem;
+    width: 90rem;
+  }
+
+  .project__holiday {
+    justify-self: center;
+    position: relative;
+    left: 11rem;
+    align-items: flex-start;
+    margin-top: 3rem;
+    height: 60rem;
+  }
+
+  .span__01 {
+    top: -7rem;
+  }
+
+  .project__movie {
+    justify-self: center;
+    position: relative;
+    left: 3.5rem;
+    align-items: flex-start;
+    height: 50rem;
+  }
+
+  .span__03 {
+    top: -6rem;
+  }
+
+  .project__iorder {
+    justify-self: center;
+    position: relative;
+    left: 3.5rem;
+    align-items: flex-start;
+  }
+  .span__04 {
+    top: -6rem;
+  }
+}
+@media (max-width: 85.62em) {
+  .nav-list {
+    gap: 4rem;
+  }
+
+  .nav-button {
+    height: 5rem !important;
+    width: 15rem !important;
+    position: relative;
+    bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about {
+    padding-left: 2rem;
+  }
+
+  .container {
+    width: 100vw;
+  }
+
+  .hows__container {
+    width: 100vw;
+  }
+}
+@media (max-width: 74.87em) {
+  .card__container {
+    height: 160rem;
+    flex-wrap: nowrap;
+  }
+
+  .skills {
+    height: 160em;
+  }
+
+  .contact__container {
+    right: 0.01rem;
+    margin-right: 4rem;
+  }
+
+  .project__holiday {
+    width: 20rem;
+    left: -15rem;
+  }
+
+  .project__chessapp {
+    width: 20rem;
+    left: -15rem;
+  }
+
+  .project__movie {
+    width: 60rem;
+    left: 1rem;
+  }
+  .project__iorder {
+    width: 60rem;
+    left: 1rem;
+  }
+}
+
+@media (max-width: 68.75em) {
+  .section__how {
+    flex-wrap: wrap;
+    height: 220rem;
+  }
+
+  .btn-mobile-nav {
+    display: block;
+    z-index: 9999;
+  }
+
+  .navigation {
+    background-color: var(--color-blue-dark-shade);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    transform: translateX(100%);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.5s ease-in;
+    opacity: 0;
+
+    /* 2) Make it unaccessible to mouse and keyboard */
+    pointer-events: none;
+
+    /* 3) Hide it from screen readers */
+    visibility: hidden;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+  }
+  .nav-open .navigation {
+    opacity: 1;
+    pointer-events: auto;
+    visibility: visible;
+    transform: translateX(0);
+  }
+
+  .nav-open .icon-mobile-nav[name="close-outline"] {
+    display: block;
+    z-index: 100;
+  }
+
+  .nav-open .icon-mobile-nav[name="menu-outline"] {
+    display: none;
+  }
+
+  .btn,
+  .btn:visited {
+    z-index: 0;
+    position: relative;
+  }
+
+  .name-nav {
+    font-size: 2.4rem;
+    font-weight: bold;
+    font-style: italic;
+    margin-bottom: 8rem;
+    color: var(--color-grey-light-text);
+    position: relative;
+    bottom: 12rem;
+  }
+
+  .nav-list {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    bottom: 12rem;
+  }
+
+  .mobile-socials {
+    display: flex;
+    gap: 4rem;
+    visibility: visible;
+  }
+
+  .mobile-socials-phone {
+    display: block;
+    visibility: visible;
+  }
+}
